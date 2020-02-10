@@ -4,7 +4,7 @@ key_list = []
 press_count = 0
 
 def write_to_file(key_list):
-    # checks if log.txt exists
+    # checks if log.txt exists, makes file if not
     if not (os.path.exists("log.txt")):
         file = open("log.txt",'w')
         file.close()
